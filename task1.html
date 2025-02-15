@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <script>
+        function bookTicket() {
+            let userName = prompt("Please enter your name:");
+            let availableSeats = [];
+            for (let i = 1; i <= 30; i++) {
+                availableSeats.push(i);
+            }
+            alert("Available seats:  "  +  availableSeats.join("\n"));
+            let seatNumber = Math.ceil(Math.random() * 30);
+            alert(`Hello ${userName}, your seat number is ${seatNumber}.`);
+        }
+        bookTicket();
+    </script>
+</body>
+</html>
